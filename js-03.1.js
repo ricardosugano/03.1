@@ -27,8 +27,11 @@ const carroEsportivo = new Carro();
 carroEsportivo.marca = "Chevrolet"
 carroEsportivo.modelo = "Camaro"
 carroEsportivo.ano = 2024
+carroEsportivo.turbo = () => {
+    return "Vruuuuummm! O carro está acelerando muito!!!";
+};
+document.write(`<p> O carro ${carroEsportivo.marca} modelo ${carroEsportivo.modelo} é do ano de ${carroEsportivo.ano}. Quando buzina faz ${carroEsportivo.turbo()}</p>`)
 
-document.write(`<p> O carro ${carroEsportivo.marca} modelo ${carro.modelo} é do ano de ${carroEsportivo.ano}. Quando buzina faz ${carroEsportivo.buzinar()}</p>`)
 
 
 //adicionando um novo atributo
@@ -38,8 +41,5 @@ carroEsportivo.corNeon = "Azul";
 
 // adicionando um novo método
 
-carroEsportivo.turbo = () => {
-    return "Vruuuuummm! O carro está acelerando muito!!!";
-};
 
 document.write(`<p> O carro ${carroEsportivo.marca} ${carroEsportivo.modelo} também possui neon da cor ${carroEsportivo.corNeon}. E quando usa turbo ${carroEsportivo.turbo()}</p>`)
