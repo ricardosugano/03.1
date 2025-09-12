@@ -1,50 +1,32 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fábrica de Heróis</title>
+    <title>Painel de Controle de Cores</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <script src="exercicios_js-06.js"></script>
-    
-    <div class="container">
-        <header>
-            <h1>Fábrica de Heróis</h1>
-            <p class="subtitle">Crie e controle seus próprios heróis!</p>
-        </header>
+    <div id="container">
+        <h1 class="title">Painel de Controle de Cores</h1>
         
-        <div class="herois-container" id="heroisContainer">
+        <div class="controls">
+            <button class="btn btn-light" onclick="ativarModoClaro()">Modo claro</button>
+            <button class="btn btn-dark" onclick="ativarModoEscuro()">Modo escuro</button>
         </div>
         
-        <div class="console">
-            <div class="console-title">Console de Ações:</div>
-            <div id="consoleOutput"></div>
+        <div class="info-panel">
+            <h2>Como funciona?</h2>
+            <p>Este painel demonstra a manipulação do DOM para alterar entre os temas claro e escuro. Clique nos botões acima para alternar entre os modos e observe as mudanças de estilo aplicadas à página.</p>
         </div>
         
-        <div class="criar-heroi">
-            <h2 class="form-title">Criar Novo Herói</h2>
-            <div class="form-group">
-                <label for="nome">Nome:</label>
-                <input type="text" id="nome" placeholder="Ex: Superman">
-            </div>
-            <div class="form-group">
-                <label for="vida">Vida:</label>
-                <input type="number" id="vida" placeholder="Ex: 100" value="100">
-            </div>
-            <div class="form-group">
-                <label for="velocidade">Velocidade:</label>
-                <input type="number" id="velocidade" placeholder="Ex: 50" value="50">
-            </div>
-            <div class="form-group">
-                <label for="forca">Força:</label>
-                <input type="number" id="forca" placeholder="Ex: 80" value="80">
-            </div>
-            <button class="criar-btn" onclick="criarHeroi()">Criar Herói</button>
-        </div>
+        <div class="mode-indicator" id="modeIndicator">Modo Atual: Claro</div>
+        
+        <footer>
+            <p>Desenvolvido para praticar manipulação do DOM</p>
+        </footer>
     </div>
 
-    <script src="exercicio_js_06.js"></script>
+    <script src="exercicios_dom.js"></script>
 </body>
 </html>
