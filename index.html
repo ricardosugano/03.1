@@ -3,12 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Javascript - Exercício 5</title>
+    <title>Fábrica de Heróis</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Exercício 5</h1>
+    <script src="exercicios_js-06.js"></script>
     
+    <div class="container">
+        <header>
+            <h1>Fábrica de Heróis</h1>
+            <p class="subtitle">Crie e controle seus próprios heróis!</p>
+        </header>
+        
+        <div class="herois-container" id="heroisContainer">
+        </div>
+        
+        <div class="console">
+            <div class="console-title">Console de Ações:</div>
+            <div id="consoleOutput"></div>
+        </div>
+        
+        <div class="criar-heroi">
+            <h2 class="form-title">Criar Novo Herói</h2>
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" placeholder="Ex: Superman">
+            </div>
+            <div class="form-group">
+                <label for="vida">Vida:</label>
+                <input type="number" id="vida" placeholder="Ex: 100" value="100">
+            </div>
+            <div class="form-group">
+                <label for="velocidade">Velocidade:</label>
+                <input type="number" id="velocidade" placeholder="Ex: 50" value="50">
+            </div>
+            <div class="form-group">
+                <label for="forca">Força:</label>
+                <input type="number" id="forca" placeholder="Ex: 80" value="80">
+            </div>
+            <button class="criar-btn" onclick="criarHeroi()">Criar Herói</button>
+        </div>
+    </div>
+
+    <script src="exercicio_js_06.js"></script>
 </body>
-<script src="exercicios_js-05.js"></script>
 </html>
